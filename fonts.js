@@ -7,11 +7,12 @@
 
 var fontCardText = document.getElementsByClassName("text-content")[0];
 var customText = document.getElementById("custom-text");
+var sampleText = "A third of the food raised or prepared does not make it from farm or factory to fork.";
 
 customText.addEventListener("keyup", function(){
 	fontCardText.textContent = customText.value;
 	if (customText.value == ""){
-		fontCardText.textContent = "A third of the food raised or prepared does not make it from farm or factory to fork.";
+		fontCardText.textContent = sampleText;
 	}
 });
 
@@ -30,6 +31,30 @@ var exampleFont = document.getElementsByClassName("text-content")[0];
 sizeSelector.addEventListener("change", function(){
 	exampleFont.style.fontSize = (sizeSelector.value.toString() + "px");
 });
+
+
+
+
+// Implement the clickable 'reset' icon on the far right of the major navigation; 
+// it should make the page appear as if the user reloaded the page (do not actually reload the page)
+
+
+function resetPage(){
+	fontCardText.textContent = sampleText;
+	fontCardText.style.fontSize = "20px";
+	customText.value = "";
+	sizeSelector.value = 20;
+
+};
+
+var resetButton = document.getElementById("reset-button");
+
+resetButton.addEventListener("click", function(){
+	resetPage();
+});
+
+
+
 
 
 

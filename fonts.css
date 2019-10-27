@@ -86,6 +86,10 @@ form i:hover {
 	color: #ff0000;
 }
 
+form i:click {
+	color: #000000;
+}
+
 input {
 	border: none;
 	border-right: 1px solid #939393;
