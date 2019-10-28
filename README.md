@@ -1,4 +1,4 @@
-# pre-work-favourite-fonts 🚀
+# favourite fonts 🚀
 
 view requirements 📄 for this project @
 https://github.com/chingu-voyages/voyage-prework-tier1-favfonts 
