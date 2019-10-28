@@ -13,8 +13,9 @@
         crossorigin="anonymous">
 </head>
 <body>
-<div id="mode-div">
 
+
+<!-- header with minor navigation: -->
 <header>
 	<ul>
 		<li><a href="https://fonts.google.com/" id="logo" tabindex="1"><span>Google</span> Fonts</a></li>
@@ -24,29 +25,31 @@
 		<li><a href="https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab" class="nav" tabindex="3">Articles</a></li>
 		<li><a href="https://fonts.google.com/about" class="nav" tabindex="2">About</a></li>
 	</ul>
-</header>
-<hr>
+</header><hr>
 
+
+<!-- major navigation and page manipulation:  -->
 <div id="major-nav">
-<form>
-	<input type="text" id="search" name="search" placeholder="Search fonts" tabindex="6">  
-	<input type="text" id="custom-text" name="custom-text" class="dont-show" placeholder="Type something" tabindex="7">  
-	<select id="font-size" class="dont-show" tabindex="8">
-		<option value="20">20px</option>
-		<option value="24">24px</option>
-		<option value="32">32px</option>
-		<option value="40">40px</option>
-	</select> 
-	<div>
-		<i class="fas fa-moon" id="dark-mode" tabindex="9"></i>
-		<i class="far fa-sun" id="light-mode" tabindex="10"></i>
-	</div>
-	<i class="dont-show fas fa-th-large" tabindex="11"></i>
-	<i class="fas fa-undo" id="reset-button" tabindex="12"></i>
-
-</form>
+	<form>
+		<input type="text" id="search" name="search" placeholder="Search fonts" tabindex="6">  
+		<input type="text" id="custom-text" name="custom-text" class="dont-show" placeholder="Type something" tabindex="7">  
+		<select id="font-size" class="dont-show" tabindex="8">
+			<option value="20">20px</option>
+			<option value="24">24px</option>
+			<option value="32">32px</option>
+			<option value="40">40px</option>
+		</select> 
+		<div class="dont-show">
+			<i class="fas fa-moon" id="dark-mode" tabindex="9"></i>
+			<i class="far fa-sun" id="light-mode" tabindex="10"></i>
+		</div>
+		<i class="dont-show fas fa-th-large" tabindex="11"></i>
+		<i class="fas fa-undo" id="reset-button" tabindex="12"></i>
+	</form>
 </div>
 
+
+<!-- main section with font cards: -->
 <section id="main">
 	<div class="container">
 		<div class="font-card">
@@ -92,6 +95,8 @@
 	</div>
 </section>
 
+
+<!-- footer with dev info: -->
 <footer>
 	<p>Steph Airth, 2019<br>
 		<a href="https://github.com/stephairth"><i class="fab fa-github-square"></i></a>
@@ -100,7 +105,8 @@
 	</p>
 </footer>
 
-</div>
+<!-- my javascript: -->
 <script type="text/javascript" src="fonts.js"></script>
+
 </body>
 </html>
