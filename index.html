@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!-- If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. -->
+<html lang="en">
 <head>
 	<title>Favourite Fonts</title>
 	<!-- my css: -->
@@ -16,92 +17,92 @@
 
 
 <!-- header with minor navigation: -->
-<header>
+<nav>
 	<ul>
-		<li><a href="https://fonts.google.com/" id="logo" tabindex="1"><span>Google</span> Fonts</a></li>
+		<li><a href="https://fonts.google.com/" id="logo"><span>Google</span> Fonts</a></li>
 		<br><br><br>
-		<li><a href="https://fonts.google.com/" class="nav" tabindex="5">Catalog</a></li>
-		<li><a href="https://fonts.google.com/featured" class="nav" tabindex="4">Featured</a></li>
-		<li><a href="https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab" class="nav" tabindex="3">Articles</a></li>
-		<li><a href="https://fonts.google.com/about" class="nav" tabindex="2">About</a></li>
+		<li><a href="https://fonts.google.com/" class="nav">Catalog</a></li>
+		<li><a href="https://fonts.google.com/featured" class="nav">Featured</a></li>
+		<li><a href="https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab" class="nav">Articles</a></li>
+		<li><a href="https://fonts.google.com/about" class="nav">About</a></li>
 	</ul>
-</header><hr>
+</nav><hr>
 
 
 <!-- major navigation and page manipulation:  -->
-<div id="major-nav">
+<header>
 	<form>
-		<input type="text" id="search" name="search" placeholder="Search fonts" tabindex="6">  
-		<input type="text" id="custom-text" name="custom-text" class="dont-show" placeholder="Type something" tabindex="7">  
-		<select id="font-size" class="dont-show" tabindex="8">
+		<input type="text" id="search" name="search" placeholder="Search fonts">  
+		<input type="text" id="custom-text" name="custom-text" class="dont-show" placeholder="Enter custom text">  
+		<select id="font-size" class="dont-show" role="dropdown">
 			<option value="20">20px</option>
 			<option value="24">24px</option>
 			<option value="32">32px</option>
 			<option value="40">40px</option>
 		</select> 
 		<div class="dont-show">
-			<i class="fas fa-moon" id="dark-mode" tabindex="9"></i>
-			<i class="far fa-sun" id="light-mode" tabindex="10"></i>
+			<i class="fas fa-moon" id="dark-mode" role="button" aria-label="dark mode" tabindex="0"></i>
+			<i class="far fa-sun" id="light-mode" role="button" aria-label="light mode" tabindex="0"></i>
 		</div>
-		<i class="dont-show fas fa-th-large" tabindex="11"></i>
-		<i class="fas fa-undo" id="reset-button" tabindex="12"></i>
+		<i class="dont-show fas fa-th-large" role="button" aria-label="grid view" tabindex="0"></i>
+		<i class="fas fa-undo" id="reset-button" role="button" aria-label="reset" tabindex="0"></i>
 	</form>
-</div>
+</header>
 
 
 <!-- main section with font cards: -->
-<section id="main">
+<main>
 	<div class="container">
 		<div class="font-card">
-			<p class="font-name">Roboto <i class="fas fa-plus" tabindex="13"></i></p>
+			<p class="font-name">Roboto <i class="fas fa-plus" role="button" aria-label="add font Roboto" tabindex="0"></i></p>
 			<p class="creator-name">Christian Robertson</p>
 			<p class="text-content" id="roboto">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
 		</div>
 		<div class="font-card">
-			<p class="font-name">Gayathri <i class="fas fa-plus" tabindex="14"></i></p>
+			<p class="font-name">Gayathri <i class="fas fa-plus" role="button" aria-label="add font Gayathri" tabindex="0"></i></p>
 			<p class="creator-name">SMC</p>
 			<p class="text-content" id="gayathri">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
 		</div>
 		<div class="font-card">
-			<p class="font-name">Chilanka <i class="fas fa-plus" tabindex="15"></i></p>
+			<p class="font-name">Chilanka <i class="fas fa-plus" role="button" aria-label="add font Chilanka" tabindex="0"></i></p>
 			<p class="creator-name">SMC</p>
 			<p class="text-content" id="chilanka">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
 		</div>
 		<div class="font-card">
-			<p class="font-name">Open Sans <i class="fas fa-plus" tabindex="16"></i></p>
+			<p class="font-name">Open Sans <i class="fas fa-plus" role="button" aria-label="add font Open Sans" tabindex="0"></i></p>
 			<p class="creator-name">Steve Matteson</p>
 			<p class="text-content" id="open-sans">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
 		</div>
 		<div class="font-card">
-			<p class="font-name">Lato <i class="fas fa-plus" tabindex="17"></i></p>
+			<p class="font-name">Lato <i class="fas fa-plus" role="button" aria-label="add font Lato" tabindex="0"></i></p>
 			<p class="creator-name">Lukasz Dziedzic</p>
 			<p class="text-content" id="lato">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
 		</div>
 		<div class="font-card">
-			<p class="font-name">Manjari <i class="fas fa-plus" tabindex="18"></i></p>
+			<p class="font-name">Manjari <i class="fas fa-plus" role="button" aria-label="add font Manjari" tabindex="0"></i></p>
 			<p class="creator-name">Santhosh Thottingal</p>
 			<p class="text-content" id="manjari">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
 		</div>
 		<div class="font-card">
-			<p class="font-name">Montserrat <i class="fas fa-plus" tabindex="19"></i></p>
+			<p class="font-name">Montserrat <i class="fas fa-plus" role="button" aria-label="add font Montserrat" tabindex="0"></i></p>
 			<p class="creator-name">Julietta Ulanovsky</p>
 			<p class="text-content" id="montserrat">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
 		</div>
 		<div class="font-card">
-			<p class="font-name">Roboto Condensed <i class="fas fa-plus" tabindex="20"></i></p>
+			<p class="font-name">Roboto Condensed <i class="fas fa-plus" role="button" aria-label="add font Roboto Condensed" tabindex="0"></i></p>
 			<p class="creator-name">Christian Robertson</p>
 			<p class="text-content" id="roboto-condensed">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
 		</div>
 	</div>
-</section>
+</main>
 
 
 <!-- footer with dev info: -->
 <footer>
 	<p>Steph Airth, 2019<br>
-		<a href="https://github.com/stephairth"><i class="fab fa-github-square"></i></a>
-		<a href="https://www.linkedin.com/in/stephairth/"><i class="fab fa-linkedin"></i></a>
-		<a href="https://twitter.com/stephairth"><i class="fab fa-twitter-square"></i></a>
+		<a href="https://github.com/stephairth"><i class="fab fa-github-square" role="button" aria-label="github"></i></a>
+		<a href="https://www.linkedin.com/in/stephairth/"><i class="fab fa-linkedin" role="button" aria-label="linkedin"></i></a>
+		<a href="https://twitter.com/stephairth"><i class="fab fa-twitter-square" role="button" aria-label="twitter"></i></a>
 	</p>
 </footer>
 
