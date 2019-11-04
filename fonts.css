@@ -16,12 +16,6 @@
 #montserrat { font-family: 'Montserrat', sans-serif; }
 #roboto-condensed { font-family: 'Roboto Condensed', sans-serif; }
 
-/* accessibility */
-
-.visually-hidden {
-	display: none;
-}
-
 /* mobile first; for small screens */
 /* minor nav: */
 nav {
@@ -113,6 +107,7 @@ input {
 	width: 50%;
 }
 
+/* don't show some elements on mobile screen: */
 .dont-show {
 	display: none;
 }

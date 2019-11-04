@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+
 <!-- If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. -->
 <html lang="en">
+
 <head>
 	<title>Favourite Fonts</title>
+
 	<!-- my css: -->
 	<link rel="stylesheet" type="text/css" href="fonts.css">
 
@@ -43,15 +46,14 @@
 <!-- major navigation and page manipulation:  -->
 <header>
 	<form>
-		<input type="text" id="search" name="search" placeholder="Search fonts">  
-		<input type="text" id="custom-text" name="custom-text" class="dont-show" placeholder="Enter custom text">  
-		<label for="font-size" class="visually-hidden">Select font size:</label>
-		<select id="font-size" role="combobox" name="select" class="dont-show">
-			<option value="20">20 pixels</option>
-			<option value="24">24 pixels</option>
-			<option value="32">32 pixels</option>
-			<option value="40">40 pixels</option>
-		</select> 
+		<input type="text" id="search" aria-label="search fonts" placeholder="Search fonts">  
+		<input type="text" id="custom-text" aria-label="enter custom text" class="dont-show" placeholder="Enter custom text">  
+		<select id="font-size" aria-label="select font size" class="dont-show">
+				<option value="20">20 pixels</option>
+				<option value="24">24 pixels</option>
+				<option value="32">32 pixels</option>
+				<option value="40">40 pixels</option>
+			</select> 
 		<div class="dont-show">
 			<i class="fas fa-moon" id="dark-mode" role="button" aria-label="dark mode" tabindex="0"></i>
 			<i class="far fa-sun" id="light-mode" role="button" aria-label="light mode" tabindex="0"></i>
