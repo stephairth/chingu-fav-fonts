@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<!-- If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. -->
+<html lang="en">
+
+<head>
+	<title>Favourite Fonts</title>
+
+	<!-- my css: -->
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+
+	<!-- google fonts: -->
+	<link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri|Lato|Manjari|Montserrat|Open+Sans|Roboto+Condensed|Roboto:400,500&display=swap" rel="stylesheet">
+
+	<!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+
+    <!-- Descriptions can be displayed in Google's search results. High-quality, unique descriptions can make your results more relevant to search users and can increase your search traffic. -->
+    <meta name="Description" content="Simple Google Fonts clone made by Steph Airth for the Chingu Collabs Voyage 13 Pre-Work Project (Tier 1)">
+
+    <!-- Without a viewport meta tag, mobile devices render pages at typical desktop screen widths, and then scale the pages to fit the mobile screens. Setting the viewport enables you to control the width and scaling of the viewport. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<!-- header with minor navigation: -->
+<nav>
+	<h1>
+		<a href="https://fonts.google.com/" id="logo">
+			<span>Google</span> fonts
+		</a>
+	</h1>
+	<br>
+		<ul>
+			<li><a href="https://fonts.google.com/" class="nav">Catalog</a></li>
+			<li><a href="https://fonts.google.com/featured" class="nav">Featured</a></li>
+			<li><a href="https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab" class="nav">Articles</a></li>
+			<li><a href="https://fonts.google.com/about" class="nav">About</a></li>
+		</ul>
+</nav><hr>
+
+
+<!-- major navigation and page manipulation:  -->
+<header>
+	<form>
+		<input type="text" id="search" aria-label="search fonts" placeholder="Search fonts">  
+		<input type="text" id="custom-text" aria-label="enter custom text" class="dont-show" placeholder="Enter custom text">  
+		<select id="font-size" aria-label="select font size" class="dont-show">
+				<option value="20">20 pixels</option>
+				<option value="24">24 pixels</option>
+				<option value="32">32 pixels</option>
+				<option value="40">40 pixels</option>
+			</select> 
+		<div class="dont-show">
+			<i class="fas fa-moon" id="dark-mode" role="button" aria-label="dark mode" tabindex="0"></i>
+			<i class="far fa-sun" id="light-mode" role="button" aria-label="light mode" tabindex="0"></i>
+		</div>
+		<i class="dont-show fas fa-th-large" role="button" aria-label="toggle grid view" tabindex="0"></i>
+		<i class="fas fa-undo" id="reset-button" role="button" aria-label="reset" tabindex="0"></i>
+	</form>
+</header>
+
+
+<!-- main section with font cards: -->
+<main>
+	<div class="container">
+		<div class="font-card">
+			<p class="font-name">Roboto <i class="fas fa-plus" role="button" aria-label="add font Roboto" tabindex="0"></i></p>
+			<p class="creator-name">Christian Robertson</p>
+			<p class="text-content" id="roboto">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
+		</div>
+		<div class="font-card">
+			<p class="font-name">Gayathri <i class="fas fa-plus" role="button" aria-label="add font Gayathri" tabindex="0"></i></p>
+			<p class="creator-name">SMC</p>
+			<p class="text-content" id="gayathri">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
+		</div>
+		<div class="font-card">
+			<p class="font-name">Chilanka <i class="fas fa-plus" role="button" aria-label="add font Chilanka" tabindex="0"></i></p>
+			<p class="creator-name">SMC</p>
+			<p class="text-content" id="chilanka">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
+		</div>
+		<div class="font-card">
+			<p class="font-name">Open Sans <i class="fas fa-plus" role="button" aria-label="add font Open Sans" tabindex="0"></i></p>
+			<p class="creator-name">Steve Matteson</p>
+			<p class="text-content" id="open-sans">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
+		</div>
+		<div class="font-card">
+			<p class="font-name">Lato <i class="fas fa-plus" role="button" aria-label="add font Lato" tabindex="0"></i></p>
+			<p class="creator-name">Lukasz Dziedzic</p>
+			<p class="text-content" id="lato">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
+		</div>
+		<div class="font-card">
+			<p class="font-name">Manjari <i class="fas fa-plus" role="button" aria-label="add font Manjari" tabindex="0"></i></p>
+			<p class="creator-name">Santhosh Thottingal</p>
+			<p class="text-content" id="manjari">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
+		</div>
+		<div class="font-card">
+			<p class="font-name">Montserrat <i class="fas fa-plus" role="button" aria-label="add font Montserrat" tabindex="0"></i></p>
+			<p class="creator-name">Julietta Ulanovsky</p>
+			<p class="text-content" id="montserrat">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
+		</div>
+		<div class="font-card">
+			<p class="font-name">Roboto Condensed <i class="fas fa-plus" role="button" aria-label="add font Roboto Condensed" tabindex="0"></i></p>
+			<p class="creator-name">Christian Robertson</p>
+			<p class="text-content" id="roboto-condensed">A third of the food raised or prepared does not make it from farm or factory to fork.</p>
+		</div>
+	</div>
+</main>
+
+
+<!-- footer with dev info: -->
+<footer>
+	<p>Steph Airth, 2019<br>
+		<a href="https://github.com/stephairth"><i class="fab fa-github-square" role="button" aria-label="github"></i></a>
+		<a href="https://www.linkedin.com/in/stephairth/"><i class="fab fa-linkedin" role="button" aria-label="linkedin"></i></a>
+		<a href="https://twitter.com/stephairth"><i class="fab fa-twitter-square" role="button" aria-label="twitter"></i></a>
+	</p>
+</footer>
+
+<!-- my javascript: -->
+<script type="text/javascript" src="fonts.js"></script>
+
+</body>
+</html>
