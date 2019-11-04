@@ -12,20 +12,31 @@
 	<!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+
+    <!-- Descriptions can be displayed in Google's search results. High-quality, unique descriptions can make your results more relevant to search users and can increase your search traffic. -->
+    <meta name="Description" content="Simple Google Fonts clone made by Steph Airth for the Chingu Collabs Voyage 13 Pre-Work Project (Tier 1)">
+
+    <!-- Without a viewport meta tag, mobile devices render pages at typical desktop screen widths, and then scale the pages to fit the mobile screens. Setting the viewport enables you to control the width and scaling of the viewport. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
 
 <!-- header with minor navigation: -->
 <nav>
-	<ul>
-		<li><a href="https://fonts.google.com/" id="logo"><span>Google</span> Fonts</a></li>
-		<br><br><br>
-		<li><a href="https://fonts.google.com/" class="nav">Catalog</a></li>
-		<li><a href="https://fonts.google.com/featured" class="nav">Featured</a></li>
-		<li><a href="https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab" class="nav">Articles</a></li>
-		<li><a href="https://fonts.google.com/about" class="nav">About</a></li>
-	</ul>
+	<h1>
+		<a href="https://fonts.google.com/" id="logo">
+			<span>Google</span> fonts
+		</a>
+	</h1>
+	<br>
+		<ul>
+			<li><a href="https://fonts.google.com/" class="nav">Catalog</a></li>
+			<li><a href="https://fonts.google.com/featured" class="nav">Featured</a></li>
+			<li><a href="https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab" class="nav">Articles</a></li>
+			<li><a href="https://fonts.google.com/about" class="nav">About</a></li>
+		</ul>
 </nav><hr>
 
 
@@ -34,17 +45,18 @@
 	<form>
 		<input type="text" id="search" name="search" placeholder="Search fonts">  
 		<input type="text" id="custom-text" name="custom-text" class="dont-show" placeholder="Enter custom text">  
-		<select id="font-size" class="dont-show" role="dropdown">
-			<option value="20">20px</option>
-			<option value="24">24px</option>
-			<option value="32">32px</option>
-			<option value="40">40px</option>
+		<label for="font-size" class="visually-hidden">Select font size:</label>
+		<select id="font-size" role="combobox" name="select" class="dont-show">
+			<option value="20">20 pixels</option>
+			<option value="24">24 pixels</option>
+			<option value="32">32 pixels</option>
+			<option value="40">40 pixels</option>
 		</select> 
 		<div class="dont-show">
 			<i class="fas fa-moon" id="dark-mode" role="button" aria-label="dark mode" tabindex="0"></i>
 			<i class="far fa-sun" id="light-mode" role="button" aria-label="light mode" tabindex="0"></i>
 		</div>
-		<i class="dont-show fas fa-th-large" role="button" aria-label="grid view" tabindex="0"></i>
+		<i class="dont-show fas fa-th-large" role="button" aria-label="toggle grid view" tabindex="0"></i>
 		<i class="fas fa-undo" id="reset-button" role="button" aria-label="reset" tabindex="0"></i>
 	</form>
 </header>

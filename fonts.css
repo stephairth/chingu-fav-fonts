@@ -16,6 +16,11 @@
 #montserrat { font-family: 'Montserrat', sans-serif; }
 #roboto-condensed { font-family: 'Roboto Condensed', sans-serif; }
 
+/* accessibility */
+
+.visually-hidden {
+	display: none;
+}
 
 /* mobile first; for small screens */
 /* minor nav: */
@@ -24,19 +29,31 @@ nav {
 	padding-bottom: 1rem;
 }
 
+nav h1 {
+	font-size: 2.25rem;
+	font-weight: 400;
+}
+
+nav h1 span {
+	font-weight: 700;
+}
+
+/*float ul right and lis left to keep tab order: */
+
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	float: left;
 }
 
 li {
 	float: left;
 }
 
-	li:first-child {
-		font-size: 2.25rem;
-	}
+li a {
+	float: right;
+}
 
 	li span {
 	font-weight: 500;
@@ -49,7 +66,7 @@ li {
 	}
 
 		li a:hover {
-			color: #FF0000;
+			color: #EA4335;
 		}
 
 	li .nav {
@@ -83,7 +100,7 @@ form {
 
 	form i:hover {
 		cursor: pointer;
-		color: #ff0000;
+		color: #EA4335;
 	}
 
 	form i:click {
@@ -133,7 +150,7 @@ input {
 
 	.font-card i {
 		float: right;
-		color: #FF0000;
+		color: #EA4335;
 	}
 
 		.font-card i:hover {
@@ -158,7 +175,7 @@ footer {
 }
 
 	footer i:hover {
-		color: #FF0000
+		color: #EA4335
 	}
 
 
@@ -172,14 +189,24 @@ footer {
 			display: none;
 		}
 
-	li {
+		nav h1 {
+			font-size: 1.25rem;
+			display: inline; /* stops linebreak after h1 tag */
+		}
+
+/* float ul right and lis left to keep tab order: */
+
+	ul {
 		float: right;
 	}
 
-		li:first-child {
+	li {
 		float: left;
-		font-size: 1.25rem;
-		}
+	}
+
+	li a {
+		float: right;
+	}
 
 		li .nav {
 			font-size: 1rem;
