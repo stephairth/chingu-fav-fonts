@@ -1,8 +1,3 @@
-
-
-
-
-
 // Text typed into the custom text (type something) box should immediately change
 // the sample text displayed in each font card &
 
@@ -11,7 +6,7 @@
 
 var customText = document.getElementById("custom-text");
 var contentArray = Array.from(document.getElementsByClassName("text-content"));
-var sampleText = "A third of the food raised or prepared does not make it from farm or factory to fork.";
+var sampleText = "Turn soft and lovely anytime you have the chance. Jenny Holzer";
 
 // if the input isn't empty, change the content of the font card to whatever is typed in the input:
 customText.addEventListener("keyup", function(){
@@ -28,9 +23,6 @@ customText.addEventListener("keyup", function(){
 });
 
 
-
-
-
 // Font size chooser should have at least four sizes and should immediately 
 // change the sample text font size in each font card:
 
@@ -42,9 +34,6 @@ sizeSelector.addEventListener("change", function(){
 		contentArray[i].style.fontSize = (sizeSelector.value.toString() + "px");
 	}
 });
-
-
-
 
 
 // Implement the clickable 'reset' icon on the far right of the major navigation; 
@@ -70,7 +59,6 @@ resetButton.addEventListener("click", function(){
 });
 
 
+// back to top button (including making it not appear until they have scrolled):
 
-
-
-// the end! Thanks for looking at my project :) -steph
+// back to top button hover message: 
