@@ -1,4 +1,4 @@
-# Favourite Fonts 🚀
+# Favourite Fonts T1 🚀
 
 ## Overview
 This page was made for the Chingu Voyage 13 pre-work (tier 1). You can view the requirements for this project [here](https://github.com/chingu-voyages/voyage-prework-tier1-favfonts). 
